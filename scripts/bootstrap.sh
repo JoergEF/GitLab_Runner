@@ -1,5 +1,6 @@
 #!/bin/bash
 # allgemeine Updates
+export DEBIAN_FRONTEND=noninteractive
 apt-get update
 apt-get -y upgrade
 apt-get -y autoremove
