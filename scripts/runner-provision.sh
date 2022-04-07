@@ -19,3 +19,6 @@ sudo cp /vagrant/scripts/hosts /etc
 
 # Docker-Rechte
 sudo adduser gitlab-runner docker
+
+# Gitlab - Zertifikat importieren
+openssl s_client -showcerts -connect gitlab:443 < /dev/null 2>/dev/null | openssl x509 -outform PEM > /etc/gitlab-runner/certs/gitlab.crt
