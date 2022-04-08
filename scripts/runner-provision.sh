@@ -14,9 +14,6 @@ EOF
 curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
 sudo apt-get -y install gitlab-runner 
 
-# Namensauflösung
-sudo cp /vagrant/scripts/hosts /etc
-
 # Docker-Rechte
 sudo adduser gitlab-runner docker
 

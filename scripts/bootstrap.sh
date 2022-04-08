@@ -1,9 +1,16 @@
 #!/bin/bash
+
 # allgemeine Updates
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
 apt-get -y upgrade
 apt-get -y autoremove
+
+# Konfiguration der Namensauflösung
+systemctl disable --now systemd-resolved
+rm /etc/resolv.conf
+echo "nameserver 192.168.1.11" > /etc/resolv.conf
+echo "search kurs.iad" >> /etc/resolv.conf
 
 # Docker installieren und aktivieren
 apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
