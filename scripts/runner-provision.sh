@@ -18,4 +18,5 @@ sudo apt-get -y install gitlab-runner
 sudo adduser gitlab-runner docker
 
 # Gitlab - Zertifikat importieren
+[ -d /etc/gitlab-runner/certs ] || mkdir -p /etc/gitlab-runner/certs
 openssl s_client -showcerts -connect gitlab:443 < /dev/null 2>/dev/null | openssl x509 -outform PEM > /etc/gitlab-runner/certs/gitlab.crt
