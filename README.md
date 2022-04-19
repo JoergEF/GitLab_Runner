@@ -31,5 +31,11 @@ git clone https://github.com/JoergEF/GitLab_Runner.git
 cd GitLab_Runner
 make
 ```
+### Runner registrieren
 
+```bash
+vagrant ssh
+sudo gitlab-runner register      -> als shell-Runner
+sudo gitlab-runner register      -> als Docker-Runner
+```
 
