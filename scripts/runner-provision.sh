@@ -2,7 +2,7 @@
 export DEBIAN_FRONTEND=noninteractive
 
 # Python-Module (für Runner...)
-sudo apt-get -y install python3-pip python3-venv python3-wheel python3-mypy  python3-flake8 python3-bandit python3-pylint-*
+sudo apt-get -y install python3-pip python3-venv python3-wheel
 
 # gitlab-runner auf eigenes Repo pinnen und installieren
 cat <<EOF | sudo tee /etc/apt/preferences.d/pin-gitlab-runner.pref
