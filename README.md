@@ -13,7 +13,7 @@ eine fertige Umgebung als IaC zur Verfügung gestellt wird.
 
 ### gemeinsame Voraussetzung
 
-  1. Gitlab installieren (https://github.com/JoergEF/Gitlab_docker_standalone.git)
+  1. Gitlab installieren (https://github.com/JoergEF/Gitlab-Docker-standalone)
 
 ### Voraussetzungen (Windows)
 
