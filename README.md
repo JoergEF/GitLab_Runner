@@ -27,8 +27,8 @@ eine fertige Umgebung als IaC zur Verfügung gestellt wird.
   2. apt install build-essential vagrant
 
 ```bash
-git clone https://github.com/JoergEF/GitLab_Runner.git
-cd GitLab_Runner
+git clone https://github.com/JoergEF/Gitlab-Runner-mit-Docker.git
+cd Gitlab-Runner-mit-Docker
 make
 ```
 ### Runner registrieren
