@@ -9,5 +9,5 @@ Teil 2 des Gitlab-Demoprojekts innerhalb dessen mittels
   2. Virtualbox
   3. Docker
   
-eine fertige Gitlab-Runner Umgebung als IaC zur Verfügung gestellt wird.
+eine fertige Gitlab-Runner-Umgebung als IaC zur Verfügung gestellt wird.
 
