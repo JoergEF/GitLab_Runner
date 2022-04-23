@@ -1,41 +1,13 @@
 # GitLab Runner (standalone, mit Docker)
 
-Ein Demoprojekt innerhalb dessen mittels
+## Anleitung für Gesamtprojekt
+https://gist.github.com/JoergEF/4ac451826bcde1b176e97604a43edd51
+
+Teil 2 des Gitlab-Demoprojekts innerhalb dessen mittels
 
   1. Vagrant
   2. Virtualbox
   3. Docker
-  4. GitLab Runner
   
-eine fertige Umgebung als IaC zur Verfügung gestellt wird.
-
-## Benutzung
-
-### gemeinsame Voraussetzung
-
-  1. Gitlab installieren (https://github.com/JoergEF/Gitlab-Docker-standalone)
-
-### Voraussetzungen (Windows)
-
-  1. chocolatey installieren (https://chocolatey.org/install#individual)
-  2. choco install make
-  3. choco install vagrant
-
-### Voraussetzungen (Ubuntu/Debian)
-
-  1. apt update
-  2. apt install build-essential vagrant
-
-```bash
-git clone https://github.com/JoergEF/Gitlab-Runner-mit-Docker.git
-cd Gitlab-Runner-mit-Docker
-make
-```
-### Runner registrieren
-
-```bash
-vagrant ssh
-sudo gitlab-runner register      -> als shell-Runner
-sudo gitlab-runner register      -> als Docker-Runner
-```
+eine fertige Gitlab-Runner Umgebung als IaC zur Verfügung gestellt wird.
 
